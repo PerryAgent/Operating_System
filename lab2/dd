@@ -1,0 +1,18 @@
+if [ -h "${file[i]}" ]
+then 
+continue
+fi
+for((j=i+1;i<size;j++)) do
+if [ -h "${file[j]}" ]
+then 
+continue
+fi
+dif=`diff ${file[i]} ${file[j]}`
+if [ -z "$dif" ]
+then 
+echo "reached"
+rm `${file[j]}`
+ln -s "${file[i]}" "${file[j]}"
+fi
+done
+done
