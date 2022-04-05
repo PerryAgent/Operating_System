@@ -1,0 +1,13 @@
+#./bin/calc -d -a -x < tests/test3.in > tests/test3sample.out
+
+2 2
+1,2,
+3,4,
+
+2 2
+1,2,
+2,2,
+
+2 2
+1,2,
+2,2,

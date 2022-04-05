@@ -1,0 +1,14 @@
+#./bin/calc -a -s -t -m < tests/test1.in > tests/test1sample.out
+3
+
+2 1
+1,
+2,
+
+2 1
+1,
+1,
+
+2 1
+2,
+2,
